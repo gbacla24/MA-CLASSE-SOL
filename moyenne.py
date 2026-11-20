@@ -34,5 +34,7 @@ if __name__ == "__main__":
         return "Passable"
       return "Insuffisant"
     notes = lire_notes("donnees/notes.csv")
-    """ print("Moyenne :", moyenne_ponderee(notes))"""
+    moyenne = moyenne_ponderee(notes)
+    print("Moyenne :", moyenne)
+    print("Mention :", mention(moyenne))
 print("afficher la mention")
