@@ -22,6 +22,17 @@ def lire_notes(chemin):
 
 
 if __name__ == "__main__":
+    def mention(moyenne):
+      """Renvoie la mention correspondant a une moyenne sur 20."""
+      if moyenne >= 16:
+        return "Tres bien"
+      if moyenne >= 14:
+        return "Bien"
+      if moyenne >= 12:
+        return "Assez bien"
+      if moyenne >= 10:
+        return "Passable"
+      return "Insuffisant"
     notes = lire_notes("donnees/notes.csv")
-   """ print("Moyenne :", moyenne_ponderee(notes))"""
+    """ print("Moyenne :", moyenne_ponderee(notes))"""
 print("afficher la mention")
